@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class DivisionCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el dividendo: ");
+        int dividendo = scanner.nextInt();
+
+        System.out.print("Ingrese el divisor: ");
+        int divisor = scanner.nextInt();
+
+        int cociente = dividendo / divisor;
+        int residuo = dividendo % divisor;
+
+        System.out.println("Cociente: " + cociente);
+        System.out.println("Residuo: " + residuo);
+
+        if (residuo == 0) {
+            System.out.println("La división es exacta.");
+        } else {
+            System.out.println("La división no es exacta.");
+        }
+
+        scanner.close();
+    }
+}
