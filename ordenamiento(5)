@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class ordenamiento {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+                int a, b, c, d;
+                System.out.println("Ingrese número 4 numeros");
+                a = entrada.nextInt();
+                b = entrada.nextInt();
+                c = entrada.nextInt();
+                d = entrada.nextInt();
+
+                if (a > b) {
+                    a = a + b;
+                    b = a - b;
+                    a = a - b;
+                }
+                if (c > d) {
+                    c = c + d;
+                    d = c - d;
+                    c = c - d;
+                }
+
+                if (a > c) {
+                    a = a + c;
+                    c = a - c;
+                    a = a - c;
+                }
+
+                if (b > d) {
+                    b = b + d;
+                    d = b - d;
+                    b = b - d;
+                }
+
+                if (b > c) {
+                    b = b + c;
+                    c = b - c;
+                    b = b - c;
+                }
+
+                System.out.println("Números ordenados: " + a + " " + b + " " + c + " " + d);
+            }
+        }
