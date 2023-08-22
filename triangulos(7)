@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ordenamiento {
+    public static void main(String[] args) {
+
+                Scanner entrada = new Scanner(System.in);
+                int a, b, c;
+                System.out.println("Ingrese la medida de 3 lados para clasificar el triángulo: ");
+                a = entrada.nextInt();
+                b = entrada.nextInt();
+                c = entrada.nextInt();
+
+                if (a == b && b == c) {
+                    System.out.println("El triángulo es equilátero.");
+                } else if (a == b || a == c || b == c) {
+                    System.out.println("El triángulo es isósceles.");
+                } else {
+                    System.out.println("El triángulo es escaleno.");
+                }
+            }
+        }
