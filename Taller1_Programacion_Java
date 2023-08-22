@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int jugador1, jugador2;
+        System.out.println("ingrese los sets ganados del jugador 1");
+        jugador1=entrada.nextInt();
+        System.out.println("ingrese los sets ganados del jugador 1");
+        jugador2=entrada.nextInt();
+        if( jugador1==4 && jugador2==5 || jugador1==5 && jugador2==6){System.out.println("el juego no termina");}
+        if(jugador1==5 && jugador2==7){System.out.println("el jugador 2 gano");}
+        if(jugador1==3 && jugador2==7){System.out.println("invalido");}
+        if(jugador1==6 && jugador2==4){System.out.println("el jugador 1 gano");}
+    }
+}
